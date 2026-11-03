@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Начальные остатки",
+    "expected": "[120, 3, 28]",
+    "actual": "[120, 3, 28]",
+    "status": "Пройден"
+  },
+  {
+    "name": "Поиск без учета регистра",
+    "expected": "1",
+    "actual": "1",
+    "status": "Пройден"
+  },
+  {
+    "name": "Фильтр категории",
+    "expected": "2",
+    "actual": "2",
+    "status": "Пройден"
+  },
+  {
+    "name": "Низкий остаток",
+    "expected": "['P-002']",
+    "actual": "['P-002']",
+    "status": "Пройден"
+  },
+  {
+    "name": "Пустой поиск",
+    "expected": "0",
+    "actual": "0",
+    "status": "Пройден"
+  },
+  {
+    "name": "Спецсимвол процента",
+    "expected": "0",
+    "actual": "0",
+    "status": "Пройден"
+  },
+  {
+    "name": "Попытка SQL-инъекции",
+    "expected": "0",
+    "actual": "0",
+    "status": "Пройден"
+  },
+  {
+    "name": "Добавление товара",
+    "expected": "1",
+    "actual": "1",
+    "status": "Пройден"
+  },
+  {
+    "name": "Редактирование товара",
+    "expected": "1",
+    "actual": "1",
+    "status": "Пройден"
+  },
+  {
+    "name": "Дублирование артикула",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Поступление и списание",
+    "expected": "6",
+    "actual": "6",
+    "status": "Пройден"
+  },
+  {
+    "name": "Списание сверх остатка",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Откат неудачного списания",
+    "expected": "6",
+    "actual": "6",
+    "status": "Пройден"
+  },
+  {
+    "name": "Списание задним числом",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Удаление прихода с зависимым расходом",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Редактирование движения",
+    "expected": "7",
+    "actual": "7",
+    "status": "Пройден"
+  },
+  {
+    "name": "Количество ноль",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Неверная дата",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Пустое название",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Удаление связанной категории",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Отчет по периоду",
+    "expected": "(150, 0, 30, 120)",
+    "actual": "(150, 0, 30, 120)",
+    "status": "Пройден"
+  },
+  {
+    "name": "Неверный период",
+    "expected": "True",
+    "actual": "True",
+    "status": "Пройден"
+  },
+  {
+    "name": "Экспорт CSV",
+    "expected": "5",
+    "actual": "5",
+    "status": "Пройден"
+  },
+  {
+    "name": "Два одновременных списания",
+    "expected": "['ok', 'rejected']",
+    "actual": "['ok', 'rejected']",
+    "status": "Пройден"
+  },
+  {
+    "name": "Остаток после конкурентного списания",
+    "expected": "2",
+    "actual": "2",
+    "status": "Пройден"
+  },
+  {
+    "name": "Удаление тестовых справочников",
+    "expected": "0",
+    "actual": "0",
+    "status": "Пройден"
+  }
+]
