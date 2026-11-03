@@ -49,11 +49,11 @@ class App(tk.Tk):
         for key, title in TITLES.items():
             tk.Button(side, text=title, anchor='w', padx=18, pady=14,
                 bg='#172c49', fg='white', activebackground='#28496f', activeforeground='white',
-                relief='flat', borderwidth=0, command=lambda k=key:self.show(k)).pack(fill='x')
+                relief='flat', borderwidth=0, command=lambda k=key:self.safe(lambda:self.show(k))).pack(fill='x')
         tk.Label(side,text='Python + MySQL',bg='#172c49',fg='#b4c6df').pack(side='bottom',pady=25)
         self.body = ttk.Frame(self, padding=25); self.body.pack(fill='both',expand=True)
         self.protocol('WM_DELETE_WINDOW',self.close)
-        self.show('products')
+        self.safe(lambda:self.show('products'))
 
     def safe(self, action):
         try:
